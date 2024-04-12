@@ -1,0 +1,14 @@
+syntax="proto3";
+
+package auth_service.service.api;
+
+option go_package = "github.com/magento1982/grpc-blog/proto";
+
+message LoginRequest {
+    string Login = 1;
+    string Password = 2;
+}
+
+message AuthResponse {
+    string Token = 1;
+}
